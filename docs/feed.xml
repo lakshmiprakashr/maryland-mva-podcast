@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" 
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maryland MVA Study Podcast</title>
+    <link>https://your-site.netlify.app</link>
+    <language>en-us</language>
+    <description>Audio review materials for the Maryland Driver's License Exam. Study for the MVA knowledge test with chapter-by-chapter audio guides covering traffic laws, safe driving practices, and road signs.</description>
+    <itunes:author>MVA Study Guide</itunes:author>
+    <itunes:summary>Prepare for your Maryland driver's license exam with these audio study guides. Covers both the Driver's Manual and Rookie Manual with detailed explanations, memory tricks, and practice questions.</itunes:summary>
+    <itunes:owner>
+      <itunes:name>MVA Study Guide</itunes:name>
+    </itunes:owner>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:category text="Education">
+      <itunes:category text="Self-Improvement"/>
+    </itunes:category>
+    <atom:link href="https://your-site.netlify.app/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <!-- Driver's Manual Episodes -->
+    <item>
+      <title>Chapter 1: Driving Tests Requirements</title>
+      <description><![CDATA[
+        <p>Learn about the three licensing requirements for Maryland: vision screening, knowledge test, and driving skills test.</p>
+        <p><strong>Key topics:</strong> Vision standards, knowledge test format, vehicle requirements, document requirements.</p>
+      ]]></description>
+      <enclosure url="https://your-site.netlify.app/audio/driver-manual-chapter-01.mp3" type="audio/mpeg"/>
+      <itunes:title>Driving Tests Requirements</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <itunes:summary>Covers the three tests required for a Maryland driver's license: vision screening, knowledge test, and driving skills test.</itunes:summary>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>driver-manual-chapter-01</guid>
+    </item>
+    
+    <!-- Add more episodes here -->
+    
+  </channel>
+</rss>

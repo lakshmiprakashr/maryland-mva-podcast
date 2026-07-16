@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maryland MVA Study Podcast</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px;
+            background: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #1a5276, #2e86c1);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        h1 { margin: 0; font-size: 2.5em; }
+        .subtitle { opacity: 0.9; margin-top: 10px; }
+        h2 { 
+            color: #1a5276; 
+            border-bottom: 2px solid #2e86c1;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        .chapter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .chapter-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .chapter-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+        .chapter-card h3 {
+            margin: 0 0 10px 0;
+            color: #1a5276;
+            font-size: 1.1em;
+        }
+        .chapter-card .meta {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        audio {
+            width: 100%;
+            height: 35px;
+        }
+        .rss-link {
+            display: inline-block;
+            background: #ee802f;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .rss-link:hover {
+            background: #d6731f;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Maryland MVA Study Podcast</h1>
+        <p class="subtitle">Audio review materials for the Maryland Driver's License Exam</p>
+    </header>
+    
+    <section>
+        <h2>Driver's Manual (10 Chapters)</h2>
+        <div class="chapter-grid" id="driver-chapters">
+            <!-- Populated by JavaScript -->
+        </div>
+    </section>
+    
+    <section>
+        <h2>Rookie Manual (25 Chapters)</h2>
+        <div class="chapter-grid" id="rookie-chapters">
+            <!-- Populated by JavaScript -->
+        </div>
+    </section>
+    
+    <section>
+        <h2>Subscribe via RSS</h2>
+        <p>Add this podcast to your favorite app:</p>
+        <a href="/feed.xml" class="rss-link">Subscribe to RSS Feed</a>
+    </section>
+    
+    <footer>
+        <p>Generated with <a href="https://github.com/USERNAME/maryland-mva-podcast">Maryland MVA Podcast</a></p>
+    </footer>
+
+    <script>
+        const chapters = {
+            driver: [
+                { id: 1, title: "Driving Tests Requirements", duration: "12 min" },
+                { id: 2, title: "The Maryland GDL System", duration: "14 min" },
+                { id: 3, title: "Basic Driving", duration: "13 min" },
+                { id: 4, title: "Speed and Right-of-Way", duration: "15 min" },
+                { id: 5, title: "Traffic Signs and Signals", duration: "12 min" },
+                { id: 6, title: "Parking", duration: "10 min" },
+                { id: 7, title: "Sharing the Road", duration: "14 min" },
+                { id: 8, title: "Crashes and Traffic Stops", duration: "11 min" },
+                { id: 9, title: "Other Restrictions", duration: "13 min" },
+                { id: 10, title: "Insurance and Safety", duration: "15 min" }
+            ],
+            rookie: Array.from({length: 25}, (_, i) => ({
+                id: i + 1,
+                title: `Chapter ${i + 1}`,
+                duration: "12 min"
+            }))
+        };
+
+        function renderChapters(containerId, chapterList, prefix) {
+            const container = document.getElementById(containerId);
+            chapterList.forEach(ch => {
+                const card = document.createElement('div');
+                card.className = 'chapter-card';
+                card.innerHTML = `
+                    <h3>Chapter ${ch.id}: ${ch.title}</h3>
+                    <p class="meta">${ch.duration}</p>
+                    <audio controls preload="none">
+                        <source src="/audio/${prefix}-chapter-${String(ch.id).padStart(2, '0')}.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        renderChapters('driver-chapters', chapters.driver, 'driver-manual');
+        renderChapters('rookie-chapters', chapters.rookie, 'rookie-manual');
+    </script>
+</body>
+</html>

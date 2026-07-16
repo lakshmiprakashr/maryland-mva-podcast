@@ -6,28 +6,25 @@ Audio review materials for the Maryland Driver's License Exam.
 
 ```bash
 # Install dependencies
-pip install edge-tts pyyaml
+uv sync
 
-# Copy source audio scripts
-cp -r ../Maryland-Driver-TSOS/04-Artifacts/* source/
+# Generate audio (if needed)
+uv run python scripts/generate_audio.py
 
-# Generate audio
-python scripts/extract_text.py
-python scripts/generate_audio.py
-
-# Build podcast
-python scripts/build_podcast.py
+# Build podcast site
+uv run python scripts/build_podcast.py
 
 # Package Obsidian vault
-python scripts/package_vault.py
+uv run python scripts/package_vault.py
 ```
 
 ## Contents
 
-- `source/` - Audio scripts from Maryland Driver's Manual
-- `output/` - Generated audio files (WAV, MP3, SRT)
-- `obsidian-vault/` - Ready-to-use Obsidian vault
-- `scripts/` - Generation pipeline scripts
+- `source/` - Audio scripts (markdown)
+- `output/` - Generated audio files (MP3)
+- `docs/` - Netlify site (HTML, RSS, audio)
+- `obsidian-vault/` - Obsidian vault with all materials
+- `scripts/` - Generation pipeline
 
 ## Features
 
@@ -35,13 +32,47 @@ python scripts/package_vault.py
 - TTS-optimized audio with natural pauses
 - MVA-specific pronunciation guides
 - RSS feed for podcast apps
-- Obsidian vault with audio playback
+- Netlify deployment for web access
+- Obsidian vault for offline study
+
+## Deployment
+
+### GitHub Actions (Automatic)
+1. Push to `main` branch
+2. GitHub Actions generates audio
+3. Deploys to Netlify automatically
+
+### Manual Deploy
+```bash
+# Build site
+uv run python scripts/build_podcast.py
+
+# Deploy to Netlify
+netlify deploy --dir=docs --prod
+```
+
+## Netlify Site
+
+Once deployed, your site will be available at:
+- **URL**: `https://your-site.netlify.app`
+- **RSS Feed**: `https://your-site.netlify.app/feed.xml`
+
+## Configuration
+
+### Environment Variables
+- `VOICE` - TTS voice (default: `en-US-GuyNeural`)
+- `RATE` - Speech rate (default: `-5%`)
+
+### GitHub Secrets (for CI/CD)
+- `NETLIFY_AUTH_TOKEN` - Netlify personal access token
+- `NETLIFY_SITE_ID` - Netlify site ID
 
 ## Requirements
 
 - Python 3.10+
-- edge-tts (`pip install edge-tts`)
-- ffmpeg (for WAV to MP3 conversion)
+- uv (package manager)
+- edge-tts
+- ffmpeg (for audio conversion)
 
 ## License
 

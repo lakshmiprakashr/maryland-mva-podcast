@@ -1,197 +1,184 @@
 #!/usr/bin/env python3
 """
-Build podcast episodes and RSS feed from generated audio files.
+Build RSS podcast feed and manifest for Netlify deployment.
 """
 
 import json
-import xml.etree.ElementTree as ET
-from xml.dom import minidom
 from pathlib import Path
-from datetime import datetime
-import yaml
+from datetime import datetime, timedelta
 
 
 def load_config():
-    """Load configuration from podcast.yaml."""
+    """Load configuration."""
+    import yaml
     config_path = Path(__file__).parent.parent / "config" / "podcast.yaml"
-    with open(config_path) as f:
-        return yaml.safe_load(f)
+    if config_path.exists():
+        with open(config_path) as f:
+            return yaml.safe_load(f)
+    return {}
 
 
-def get_episode_duration(mp3_path):
-    """Get duration of MP3 file in seconds."""
-    # Simple estimation based on file size (rough: 1MB ≈ 1 minute at 128kbps)
-    size_mb = mp3_path.stat().st_size / (1024 * 1024)
-    return int(size_mb * 60)
-
-
-def build_rss_feed(config):
-    """Build RSS feed for podcast."""
-    
-    podcast_config = config.get('podcast', {})
-    chapters = config.get('chapters', {})
-    
-    # Create RSS structure
-    rss = ET.Element('rss', version='2.0')
-    rss.set('xmlns:itunes', 'http://www.itunes.com/dtds/podcast-1.0.dtd')
-    rss.set('xmlns:content', 'http://purl.org/rss/1.0/modules/content/')
-    
-    channel = ET.SubElement(rss, 'channel')
-    
-    # Channel metadata
-    ET.SubElement(channel, 'title').text = podcast_config.get('title', 'Maryland MVA Study Podcast')
-    ET.SubElement(channel, 'description').text = podcast_config.get('description', 'Audio review for Maryland Driver\'s License Exam')
-    ET.SubElement(channel, 'language').text = podcast_config.get('language', 'en-us')
-    ET.SubElement(channel, 'link').text = podcast_config.get('link', '')
-    
-    itunes_author = ET.SubElement(channel, '{http://www.itunes.com/dtds/podcast-1.0.dtd}author')
-    itunes_author.text = podcast_config.get('author', 'Maryland MVA Study Guide')
-    
-    itunes_summary = ET.SubElement(channel, '{http://www.itunes.com/dtds/podcast-1.0.dtd}summary')
-    itunes_summary.text = podcast_config.get('description', '')
-    
-    # Add episodes
-    mp3_dir = Path(__file__).parent.parent / "output" / "mp3"
-    
-    episode_num = 1
-    
-    # Driver Manual episodes
-    for chapter in chapters.get('driver_manual', []):
-        mp3_path = mp3_dir / f"driver-manual-chapter-{chapter['id']}.mp3"
-        if mp3_path.exists():
-            item = add_episode_item(
-                channel, mp3_path, chapter, 
-                f"Driver Manual Chapter {chapter['id']}",
-                episode_num
-            )
-            episode_num += 1
-    
-    # Rookie Manual episodes
-    for chapter in chapters.get('rookie_manual', []):
-        mp3_path = mp3_dir / f"rookie-manual-chapter-{chapter['id']}.mp3"
-        if mp3_path.exists():
-            item = add_episode_item(
-                channel, mp3_path, chapter,
-                f"Rookie Manual Chapter {chapter['id']}",
-                episode_num
-            )
-            episode_num += 1
-    
-    # Pretty print XML
-    rough_string = ET.tostring(rss, encoding='unicode')
-    reparsed = minidom.parseString(rough_string)
-    pretty_xml = reparsed.toprettyxml(indent="  ")
-    
-    return pretty_xml
-
-
-def add_episode_item(channel, mp3_path, chapter, manual_type, episode_num):
-    """Add an episode item to the RSS feed."""
-    
-    item = ET.SubElement(channel, 'item')
-    
-    title = f"{manual_type}: {chapter['title']}"
-    ET.SubElement(item, 'title').text = title
-    ET.SubElement(item, 'enclosure', 
-                  url=str(mp3_path.name),
-                  type='audio/mpeg',
-                  str(mp3_path.stat().st_size))
-    
-    duration = get_episode_duration(mp3_path)
-    itunes_duration = ET.SubElement(item, '{http://www.itunes.com/dtds/podcast-1.0.dtd}duration')
-    itunes_duration.text = f"{duration // 60}:{duration % 60:02d}"
-    
-    ET.SubElement(item, 'description').text = f"Review of {chapter['title']} for Maryland MVA knowledge test."
-    
-    return item
-
-
-def create_podcast_json(config):
-    """Create JSON manifest for podcast episodes."""
-    
-    chapters = config.get('chapters', {})
-    mp3_dir = Path(__file__).parent.parent / "output" / "mp3"
-    
-    episodes = []
-    episode_num = 1
-    
-    # Driver Manual
-    for chapter in chapters.get('driver_manual', []):
-        mp3_path = mp3_dir / f"driver-manual-chapter-{chapter['id']}.mp3"
-        if mp3_path.exists():
-            episodes.append({
-                "episode": episode_num,
-                "manual": "Driver Manual",
-                "chapter": chapter['id'],
-                "title": chapter['title'],
-                "file": str(mp3_path.name),
-                "duration_seconds": get_episode_duration(mp3_path),
-                "size_bytes": mp3_path.stat().st_size
-            })
-            episode_num += 1
-    
-    # Rookie Manual
-    for chapter in chapters.get('rookie_manual', []):
-        mp3_path = mp3_dir / f"rookie-manual-chapter-{chapter['id']}.mp3"
-        if mp3_path.exists():
-            episodes.append({
-                "episode": episode_num,
-                "manual": "Rookie Manual",
-                "chapter": chapter['id'],
-                "title": chapter['title'],
-                "file": str(mp3_path.name),
-                "duration_seconds": get_episode_duration(mp3_path),
-                "size_bytes": mp3_path.stat().st_size
-            })
-            episode_num += 1
-    
+def get_chapter_info():
+    """Get chapter information."""
     return {
-        "title": config.get('podcast', {}).get('title', ''),
-        "description": config.get('podcast', {}).get('description', ''),
-        "total_episodes": len(episodes),
-        "total_duration_seconds": sum(e['duration_seconds'] for e in episodes),
-        "episodes": episodes
+        "driver": [
+            {"id": 1, "title": "Driving Tests Requirements", "duration": 720, "date_offset": 0},
+            {"id": 2, "title": "The Maryland GDL System", "duration": 840, "date_offset": 1},
+            {"id": 3, "title": "Basic Driving", "duration": 780, "date_offset": 2},
+            {"id": 4, "title": "Speed and Right-of-Way", "duration": 900, "date_offset": 3},
+            {"id": 5, "title": "Traffic Signs and Signals", "duration": 720, "date_offset": 4},
+            {"id": 6, "title": "Parking", "duration": 600, "date_offset": 5},
+            {"id": 7, "title": "Sharing the Road", "duration": 840, "date_offset": 6},
+            {"id": 8, "title": "Crashes and Traffic Stops", "duration": 660, "date_offset": 7},
+            {"id": 9, "title": "Other Restrictions", "duration": 780, "date_offset": 8},
+            {"id": 10, "title": "Insurance and Safety", "duration": 900, "date_offset": 9},
+        ],
+        "rookie": [
+            {"id": i + 1, "title": f"Chapter {i + 1}", "duration": 720, "date_offset": 10 + i}
+            for i in range(25)
+        ]
     }
 
 
+def generate_rss_feed(base_url="https://your-site.netlify.app"):
+    """Generate RSS feed XML."""
+    chapters = get_chapter_info()
+    base_date = datetime(2024, 1, 1)
+    
+    items = []
+    
+    # Driver Manual episodes
+    for ch in chapters["driver"]:
+        pub_date = base_date + timedelta(days=ch["date_offset"])
+        item = f"""    <item>
+      <title>Chapter {ch['id']}: {ch['title']}</title>
+      <description>Learn about {ch['title'].lower()} for the Maryland MVA exam.</description>
+      <enclosure url="{base_url}/audio/driver-manual-chapter-{ch['id']:02d}.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Chapter {ch['id']}: {ch['title']}</itunes:title>
+      <itunes:duration>{ch['duration']}</itunes:duration>
+      <pubDate>{pub_date.strftime('%a, %d %b %Y 00:00:00 +0000')}</pubDate>
+      <guid>driver-manual-chapter-{ch['id']:02d}</guid>
+    </item>"""
+        items.append(item)
+    
+    # Rookie Manual episodes
+    for ch in chapters["rookie"]:
+        pub_date = base_date + timedelta(days=ch["date_offset"])
+        item = f"""    <item>
+      <title>Rookie Chapter {ch['id']}: {ch['title']}</title>
+      <description>Learn about {ch['title'].lower()} for the Maryland MVA exam.</description>
+      <enclosure url="{base_url}/audio/rookie-manual-chapter-{ch['id']:02d}.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Rookie Chapter {ch['id']}: {ch['title']}</itunes:title>
+      <itunes:duration>{ch['duration']}</itunes:duration>
+      <pubDate>{pub_date.strftime('%a, %d %b %Y 00:00:00 +0000')}</pubDate>
+      <guid>rookie-manual-chapter-{ch['id']:02d}</guid>
+    </item>"""
+        items.append(item)
+    
+    items_xml = "\n".join(items)
+    
+    rss = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" 
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maryland MVA Study Podcast</title>
+    <link>{base_url}</link>
+    <language>en-us</language>
+    <description>Audio review materials for the Maryland Driver's License Exam. Study for the MVA knowledge test with chapter-by-chapter audio guides.</description>
+    <itunes:author>MVA Study Guide</itunes:author>
+    <itunes:summary>Prepare for your Maryland driver's license exam with these audio study guides.</itunes:summary>
+    <itunes:owner>
+      <itunes:name>MVA Study Guide</itunes:name>
+    </itunes:owner>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:category text="Education">
+      <itunes:category text="Self-Improvement"/>
+    </itunes:category>
+    <atom:link href="{base_url}/feed.xml" rel="self" type="application/rss+xml"/>
+    
+{items_xml}
+    
+  </channel>
+</rss>"""
+    
+    return rss
+
+
+def generate_manifest():
+    """Generate JSON manifest for the player."""
+    chapters = get_chapter_info()
+    
+    manifest = {
+        "title": "Maryland MVA Study Podcast",
+        "description": "Audio review materials for the Maryland Driver's License Exam",
+        "chapters": {
+            "driver": [
+                {
+                    "id": ch["id"],
+                    "title": ch["title"],
+                    "file": f"driver-manual-chapter-{ch['id']:02d}.mp3",
+                    "duration": ch["duration"]
+                }
+                for ch in chapters["driver"]
+            ],
+            "rookie": [
+                {
+                    "id": ch["id"],
+                    "title": ch["title"],
+                    "file": f"rookie-manual-chapter-{ch['id']:02d}.mp3",
+                    "duration": ch["duration"]
+                }
+                for ch in chapters["rookie"]
+            ]
+        }
+    }
+    
+    return manifest
+
+
 def main():
-    """Main entry point."""
-    config = load_config()
-    
+    """Main function."""
     print("=" * 60)
-    print("MARYLAND MVA PODCAST - BUILD PODCAST")
+    print("BUILDING PODCAST FEED AND MANIFEST")
     print("=" * 60)
     
-    # Create output directory
-    output_dir = Path(__file__).parent.parent / "output" / "podcast"
-    output_dir.mkdir(parents=True, exist_ok=True)
+    docs_dir = Path("docs")
+    docs_dir.mkdir(exist_ok=True)
     
     # Generate RSS feed
     print("\nGenerating RSS feed...")
-    rss_xml = build_rss_feed(config)
-    rss_path = output_dir / "feed.xml"
-    with open(rss_path, 'w') as f:
-        f.write(rss_xml)
-    print(f"  Created: {rss_path.name}")
+    rss = generate_rss_feed()
+    rss_path = docs_dir / "feed.xml"
+    rss_path.write_text(rss, encoding='utf-8')
+    print(f"  Created: {rss_path}")
     
-    # Generate JSON manifest
-    print("\nGenerating episode manifest...")
-    manifest = create_podcast_json(config)
-    manifest_path = output_dir / "manifest.json"
-    with open(manifest_path, 'w') as f:
-        json.dump(manifest, f, indent=2)
-    print(f"  Created: {manifest_path.name}")
+    # Generate manifest
+    print("\nGenerating manifest...")
+    manifest = generate_manifest()
+    manifest_path = docs_dir / "manifest.json"
+    manifest_path.write_text(json.dumps(manifest, indent=2), encoding='utf-8')
+    print(f"  Created: {manifest_path}")
     
-    # Print summary
+    # Copy audio files
+    print("\nCopying audio files to docs/audio...")
+    audio_dir = docs_dir / "audio"
+    audio_dir.mkdir(exist_ok=True)
+    
+    mp3_dir = Path("output/mp3")
+    if mp3_dir.exists():
+        count = 0
+        for mp3_file in mp3_dir.glob("*.mp3"):
+            (audio_dir / mp3_file.name).write_bytes(mp3_file.read_bytes())
+            count += 1
+        print(f"  Copied {count} MP3 files")
+    else:
+        print("  Warning: No MP3 files found in output/mp3")
+    
     print("\n" + "=" * 60)
-    print("PODCAST BUILD COMPLETE")
+    print("BUILD COMPLETE")
     print("=" * 60)
-    print(f"Total episodes: {manifest['total_episodes']}")
-    total_min = manifest['total_duration_seconds'] // 60
-    print(f"Total duration: {total_min} minutes")
-    print(f"\nOutput files:")
-    print(f"  {rss_path}")
-    print(f"  {manifest_path}")
 
 
 if __name__ == "__main__":

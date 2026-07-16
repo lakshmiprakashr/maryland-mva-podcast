@@ -1,0 +1,18 @@
+[project]
+name = "maryland-mva-podcast"
+version = "0.1.0"
+description = "Maryland MVA Study Podcast - Audio review materials for the Maryland Driver's License Exam"
+requires-python = ">=3.10"
+dependencies = [
+    "edge-tts>=6.1.0",
+    "pyyaml>=6.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.0",
+]
