@@ -272,6 +272,45 @@ def copy_audio_files(config, dest_dir):
     print(f"  Copied {len(list(audio_dest.glob('*.mp3')))} audio files")
 
 
+def copy_practice_tests(source_dir, dest_dir):
+    """Copy practice test files to Obsidian vault."""
+    
+    practice_dest = dest_dir / "04-Practice"
+    practice_dest.mkdir(exist_ok=True)
+    
+    # Check if practice tests exist in source (they're in obsidian-vault/04-Practice)
+    practice_source = source_dir / "obsidian-vault" / "04-Practice"
+    if not practice_source.exists():
+        # Try alternative location (current directory)
+        practice_source = Path.cwd() / "obsidian-vault" / "04-Practice"
+        if not practice_source.exists():
+            print("  Warning: No practice tests found")
+            return
+    
+    # Copy Driver Manual practice tests
+    driver_practice_source = practice_source / "Driver-Manual"
+    driver_practice_dest = practice_dest / "Driver-Manual"
+    if driver_practice_source.exists():
+        driver_practice_dest.mkdir(exist_ok=True)
+        for md_file in driver_practice_source.glob("*.md"):
+            shutil.copy2(md_file, driver_practice_dest / md_file.name)
+        print(f"  Copied {len(list(driver_practice_dest.glob('*.md')))} Driver Manual practice files")
+    
+    # Copy Rookie Manual practice tests
+    rookie_practice_source = practice_source / "Rookie-Manual"
+    rookie_practice_dest = practice_dest / "Rookie-Manual"
+    if rookie_practice_source.exists():
+        rookie_practice_dest.mkdir(exist_ok=True)
+        for md_file in rookie_practice_source.glob("*.md"):
+            shutil.copy2(md_file, rookie_practice_dest / md_file.name)
+        print(f"  Copied {len(list(rookie_practice_dest.glob('*.md')))} Rookie Manual practice files")
+    
+    # Copy full practice tests
+    for md_file in practice_source.glob("*.md"):
+        shutil.copy2(md_file, practice_dest / md_file.name)
+    print(f"  Copied full practice test files")
+
+
 def main():
     """Main entry point."""
     config = load_config()
@@ -312,6 +351,10 @@ def main():
     # Copy audio files
     print("\nCopying audio files...")
     copy_audio_files(config, vault_dir)
+    
+    # Copy practice tests
+    print("\nCopying practice tests...")
+    copy_practice_tests(source_dir, vault_dir)
     
     # Create practice folder
     practice_dir = vault_dir / "04-Practice"
