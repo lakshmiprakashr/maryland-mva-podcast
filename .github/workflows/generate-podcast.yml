@@ -1,0 +1,71 @@
+name: Generate MVA Podcast
+
+on:
+  push:
+    paths:
+      - 'source/**/*.md'
+      - 'scripts/**'
+      - 'config/**'
+  workflow_dispatch:
+    inputs:
+      chapter:
+        description: 'Chapter to generate (e.g., driver-manual-01)'
+        required: false
+
+jobs:
+  generate-audio:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      
+      - name: Install dependencies
+        run: |
+          pip install edge-tts pyyaml
+          sudo apt-get update && sudo apt-get install -y ffmpeg
+      
+      - name: Extract text from scripts
+        run: python scripts/extract_text.py
+      
+      - name: Generate audio files
+        run: python scripts/generate_audio.py
+        env:
+          VOICE: en-US-GuyNeural
+      
+      - name: Build podcast feed
+        run: python scripts/build_podcast.py
+      
+      - name: Package Obsidian vault
+        run: python scripts/package_vault.py
+      
+      - name: Upload audio artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: mva-audio
+          path: |
+            output/mp3/*.mp3
+            output/srt/*.srt
+          retention-days: 30
+      
+      - name: Upload Obsidian vault
+        uses: actions/upload-artifact@v4
+        with:
+          name: obsidian-vault
+          path: obsidian-vault/
+          retention-days: 30
+      
+      - name: Create release
+        if: github.ref == 'refs/heads/main'
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            output/mp3/*.mp3
+            obsidian-vault.zip
+          tag_name: v${{ github.run_number }}
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

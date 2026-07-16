@@ -1,0 +1,116 @@
+# Maryland MVA Podcast Configuration
+
+podcast:
+  title: "Maryland MVA Study Podcast"
+  description: "Audio review for Maryland Driver's License Exam"
+  author: "Maryland MVA Study Guide"
+  language: "en-us"
+  link: "https://github.com/user/maryland-mva-podcast"
+
+voices:
+  default: "en-US-GuyNeural"
+  alternative: "en-US-AriaNeural"
+  authoritative: "en-US-ChristopherNeural"
+  
+  settings:
+    rate: "-5%"
+    pitch: "+0Hz"
+    volume: "+0%"
+
+tts:
+  provider: "edge-tts"  # edge-tts | piper
+  format: "mp3"
+  quality: "256k"
+  
+  piper:
+    model: "en_US-lessac-medium"
+    sentence_silence: 0.5
+
+pause_markers:
+  "[PAUSE]": 800        # milliseconds
+  "[LONG PAUSE]": 1500
+  "[EMPHASIS]": 200
+
+abbreviations:
+  "MVA": "M-V-A"
+  "GDL": "G-D-L"
+  "BAC": "B-A-C"
+  "CDL": "C-D-L"
+  "ABS": "A-B-S"
+  "SSN": "S-S-N"
+  "MVC": "M-V-C"
+
+chapters:
+  driver_manual:
+    - id: "01"
+      title: "Driving Tests Requirements"
+    - id: "02"
+      title: "Licensing Requirements and Process"
+    - id: "03"
+      title: "Basic Driving"
+    - id: "04"
+      title: "Rules of the Road"
+    - id: "05"
+      title: "Traffic Signs and Signals"
+    - id: "06"
+      title: "Dangerous Driving Behaviors"
+    - id: "07"
+      title: "Sharing the Road"
+    - id: "08"
+      title: "Crashes and Traffic Stops"
+    - id: "09"
+      title: "Other Restrictions Violations and Penalties"
+    - id: "10"
+      title: "Other Important Information"
+  
+  rookie_manual:
+    - id: "01"
+      title: "Welcome and Introduction"
+    - id: "02"
+      title: "Getting Started"
+    - id: "03"
+      title: "Choosing a Driving School"
+    - id: "04"
+      title: "Learner's Permit Requirements"
+    - id: "05"
+      title: "Drivers Over 25"
+    - id: "06"
+      title: "Lesson 1 - Pre-Entry Check"
+    - id: "07"
+      title: "Lesson 2 - Moving the Vehicle"
+    - id: "08"
+      title: "Lesson 3 - Position Within Lane"
+    - id: "09"
+      title: "Lesson 4 - Entering Traffic"
+    - id: "10"
+      title: "Lesson 5 - Turning at Intersection"
+    - id: "11"
+      title: "Lesson 6 - Changing Lanes"
+    - id: "12"
+      title: "Lesson 7 - Shared Left Turn Lane"
+    - id: "13"
+      title: "Lesson 8 - Roundabouts"
+    - id: "14"
+      title: "Lesson 9 - Expressway Driving"
+    - id: "15"
+      title: "Lesson 10 - Passing Another Vehicle"
+    - id: "16"
+      title: "Lesson 11 - Night Driving"
+    - id: "17"
+      title: "Lesson 12 - Adverse Conditions"
+    - id: "18"
+      title: "Lesson 13 - Parking"
+    - id: "19"
+      title: "Lesson 14 - Traffic Stops"
+    - id: "20"
+      title: "Lesson 15 - Crashes"
+    - id: "21"
+      title: "Lesson 16 - Impaired Driving"
+    - id: "22"
+      title: "Practice Log"
+    - id: "23"
+      title: "Certification and Agreement"
+    - id: "24"
+      title: "License Comparison Chart"
+    - id: "25"
+      title: "Congratulations and Next Steps"
