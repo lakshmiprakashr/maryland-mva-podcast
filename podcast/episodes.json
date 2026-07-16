@@ -1,0 +1,282 @@
+[
+  {
+    "id": "driver-01",
+    "title": "Driver Ch.1: Driving Tests Requirements",
+    "description": "Learn about the three licensing requirements for Maryland: vision screening, knowledge test, and driving skills test.",
+    "file": "Driver-Manual/driver-manual-chapter-01.mp3",
+    "duration": 1145,
+    "manual": "Driver"
+  },
+  {
+    "id": "driver-02",
+    "title": "Driver Ch.2: The Maryland GDL System",
+    "description": "Understand Maryland's Graduated Driver Licensing system for first-time drivers.",
+    "file": "Driver-Manual/driver-manual-chapter-02.mp3",
+    "duration": 928,
+    "manual": "Driver"
+  },
+  {
+    "id": "driver-03",
+    "title": "Driver Ch.3: Basic Driving",
+    "description": "Defensive driving, right-of-way rules, speed control, following distance, and lane driving.",
+    "file": "Driver-Manual/driver-manual-chapter-03.mp3",
+    "duration": 812,
+    "manual": "Driver"
+  },
+  {
+    "id": "driver-04",
+    "title": "Driver Ch.4: Speed and Right-of-Way",
+    "description": "Speed limits, following distances, and right-of-way rules at intersections.",
+    "file": "Driver-Manual/driver-manual-chapter-04.mp3",
+    "duration": 901,
+    "manual": "Driver"
+  },
+  {
+    "id": "driver-05",
+    "title": "Driver Ch.5: Traffic Signs and Signals",
+    "description": "Understanding traffic signs, signals, and road markings.",
+    "file": "Driver-Manual/driver-manual-chapter-05.mp3",
+    "duration": 980,
+    "manual": "Driver"
+  },
+  {
+    "id": "driver-06",
+    "title": "Driver Ch.6: Parking",
+    "description": "Parking rules, parallel parking, and parking restrictions.",
+    "file": "Driver-Manual/driver-manual-chapter-06.mp3",
+    "duration": 829,
+    "manual": "Driver"
+  },
+  {
+    "id": "driver-07",
+    "title": "Driver Ch.7: Sharing the Road",
+    "description": "Sharing the road with pedestrians, bicyclists, and other vehicles.",
+    "file": "Driver-Manual/driver-manual-chapter-07.mp3",
+    "duration": 990,
+    "manual": "Driver"
+  },
+  {
+    "id": "driver-08",
+    "title": "Driver Ch.8: Crashes and Traffic Stops",
+    "description": "What to do in case of a crash and during traffic stops.",
+    "file": "Driver-Manual/driver-manual-chapter-08.mp3",
+    "duration": 617,
+    "manual": "Driver"
+  },
+  {
+    "id": "driver-09",
+    "title": "Driver Ch.9: Other Restrictions",
+    "description": "License restrictions, violations, and penalties.",
+    "file": "Driver-Manual/driver-manual-chapter-09.mp3",
+    "duration": 804,
+    "manual": "Driver"
+  },
+  {
+    "id": "driver-10",
+    "title": "Driver Ch.10: Insurance and Safety",
+    "description": "Insurance requirements and vehicle safety.",
+    "file": "Driver-Manual/driver-manual-chapter-10.mp3",
+    "duration": 1150,
+    "manual": "Driver"
+  },
+  {
+    "id": "rookie-01",
+    "title": "Rookie Ch.1: Chapter 1",
+    "description": "Rookie Manual Chapter 1 - Maryland MVA study material.",
+    "file": "Rookie-Manual/rookie-manual-chapter-01.mp3",
+    "duration": 565,
+    "manual": "Rookie"
+  },
+  {
+    "id": "rookie-02",
+    "title": "Rookie Ch.2: Chapter 2",
+    "description": "Rookie Manual Chapter 2 - Maryland MVA study material.",
+    "file": "Rookie-Manual/rookie-manual-chapter-02.mp3",
+    "duration": 603,
+    "manual": "Rookie"
+  },
+  {
+    "id": "rookie-03",
+    "title": "Rookie Ch.3: Chapter 3",
+    "description": "Rookie Manual Chapter 3 - Maryland MVA study material.",
+    "file": "Rookie-Manual/rookie-manual-chapter-03.mp3",
+    "duration": 576,
+    "manual": "Rookie"
+  },
+  {
+    "id": "rookie-04",
+    "title": "Rookie Ch.4: Chapter 4",
+    "description": "Rookie Manual Chapter 4 - Maryland MVA study material.",
+    "file": "Rookie-Manual/rookie-manual-chapter-04.mp3",
+    "duration": 165,
+    "manual": "Rookie"
+  },
+  {
+    "id": "rookie-05",
+    "title": "Rookie Ch.5: Chapter 5",
+    "description": "Rookie Manual Chapter 5 - Maryland MVA study material.",
+    "file": "Rookie-Manual/rookie-manual-chapter-05.mp3",
+    "duration": 703,
+    "manual": "Rookie"
+  },
+  {
+    "id": "rookie-06",
+    "title": "Rookie Ch.6: Chapter 6",
+    "description": "Rookie Manual Chapter 6 - Maryland MVA study material.",
+    "file": "Rookie-Manual/rookie-manual-chapter-06.mp3",
+    "duration": 630,
+    "manual": "Rookie"
+  },
+  {
+    "id": "rookie-07",
+    "title": "Rookie Ch.7: Chapter 7",
+    "description": "Rookie Manual Chapter 7 - Maryland MVA study material.",
+    "file": "Rookie-Manual/rookie-manual-chapter-07.mp3",
+    "duration": 637,
+    "manual": "Rookie"
+  },
+  {
+    "id": "rookie-08",
+    "title": "Rookie Ch.8: Chapter 8",
+    "description": "Rookie Manual Chapter 8 - Maryland MVA study material.",
+    "file": "Rookie-Manual/rookie-manual-chapter-08.mp3",
+    "duration": 601,
+    "manual": "Rookie"
+  },
+  {
+    "id": "rookie-09",
+    "title": "Rookie Ch.9: Chapter 9",
+    "description": "Rookie Manual Chapter 9 - Maryland MVA study material.",
+    "file": "Rookie-Manual/rookie-manual-chapter-09.mp3",
+    "duration": 667,
+    "manual": "Rookie"
+  },
+  {
+    "id": "rookie-10",
+    "title": "Rookie Ch.10: Chapter 10",
+    "description": "Rookie Manual Chapter 10 - Maryland MVA study material.",
+    "file": "Rookie-Manual/rookie-manual-chapter-10.mp3",
+    "duration": 774,
+    "manual": "Rookie"
+  },
+  {
+    "id": "rookie-11",
+    "title": "Rookie Ch.11: Chapter 11",
+    "description": "Rookie Manual Chapter 11 - Maryland MVA study material.",
+    "file": "Rookie-Manual/rookie-manual-chapter-11.mp3",
+    "duration": 556,
+    "manual": "Rookie"
+  },
+  {
+    "id": "rookie-12",
+    "title": "Rookie Ch.12: Chapter 12",
+    "description": "Rookie Manual Chapter 12 - Maryland MVA study material.",
+    "file": "Rookie-Manual/rookie-manual-chapter-12.mp3",
+    "duration": 521,
+    "manual": "Rookie"
+  },
+  {
+    "id": "rookie-13",
+    "title": "Rookie Ch.13: Chapter 13",
+    "description": "Rookie Manual Chapter 13 - Maryland MVA study material.",
+    "file": "Rookie-Manual/rookie-manual-chapter-13.mp3",
+    "duration": 539,
+    "manual": "Rookie"
+  },
+  {
+    "id": "rookie-14",
+    "title": "Rookie Ch.14: Chapter 14",
+    "description": "Rookie Manual Chapter 14 - Maryland MVA study material.",
+    "file": "Rookie-Manual/rookie-manual-chapter-14.mp3",
+    "duration": 580,
+    "manual": "Rookie"
+  },
+  {
+    "id": "rookie-15",
+    "title": "Rookie Ch.15: Chapter 15",
+    "description": "Rookie Manual Chapter 15 - Maryland MVA study material.",
+    "file": "Rookie-Manual/rookie-manual-chapter-15.mp3",
+    "duration": 504,
+    "manual": "Rookie"
+  },
+  {
+    "id": "rookie-16",
+    "title": "Rookie Ch.16: Chapter 16",
+    "description": "Rookie Manual Chapter 16 - Maryland MVA study material.",
+    "file": "Rookie-Manual/rookie-manual-chapter-16.mp3",
+    "duration": 642,
+    "manual": "Rookie"
+  },
+  {
+    "id": "rookie-17",
+    "title": "Rookie Ch.17: Chapter 17",
+    "description": "Rookie Manual Chapter 17 - Maryland MVA study material.",
+    "file": "Rookie-Manual/rookie-manual-chapter-17.mp3",
+    "duration": 622,
+    "manual": "Rookie"
+  },
+  {
+    "id": "rookie-18",
+    "title": "Rookie Ch.18: Chapter 18",
+    "description": "Rookie Manual Chapter 18 - Maryland MVA study material.",
+    "file": "Rookie-Manual/rookie-manual-chapter-18.mp3",
+    "duration": 544,
+    "manual": "Rookie"
+  },
+  {
+    "id": "rookie-19",
+    "title": "Rookie Ch.19: Chapter 19",
+    "description": "Rookie Manual Chapter 19 - Maryland MVA study material.",
+    "file": "Rookie-Manual/rookie-manual-chapter-19.mp3",
+    "duration": 602,
+    "manual": "Rookie"
+  },
+  {
+    "id": "rookie-20",
+    "title": "Rookie Ch.20: Chapter 20",
+    "description": "Rookie Manual Chapter 20 - Maryland MVA study material.",
+    "file": "Rookie-Manual/rookie-manual-chapter-20.mp3",
+    "duration": 454,
+    "manual": "Rookie"
+  },
+  {
+    "id": "rookie-21",
+    "title": "Rookie Ch.21: Chapter 21",
+    "description": "Rookie Manual Chapter 21 - Maryland MVA study material.",
+    "file": "Rookie-Manual/rookie-manual-chapter-21.mp3",
+    "duration": 478,
+    "manual": "Rookie"
+  },
+  {
+    "id": "rookie-22",
+    "title": "Rookie Ch.22: Chapter 22",
+    "description": "Rookie Manual Chapter 22 - Maryland MVA study material.",
+    "file": "Rookie-Manual/rookie-manual-chapter-22.mp3",
+    "duration": 483,
+    "manual": "Rookie"
+  },
+  {
+    "id": "rookie-23",
+    "title": "Rookie Ch.23: Chapter 23",
+    "description": "Rookie Manual Chapter 23 - Maryland MVA study material.",
+    "file": "Rookie-Manual/rookie-manual-chapter-23.mp3",
+    "duration": 494,
+    "manual": "Rookie"
+  },
+  {
+    "id": "rookie-24",
+    "title": "Rookie Ch.24: Chapter 24",
+    "description": "Rookie Manual Chapter 24 - Maryland MVA study material.",
+    "file": "Rookie-Manual/rookie-manual-chapter-24.mp3",
+    "duration": 544,
+    "manual": "Rookie"
+  },
+  {
+    "id": "rookie-25",
+    "title": "Rookie Ch.25: Chapter 25",
+    "description": "Rookie Manual Chapter 25 - Maryland MVA study material.",
+    "file": "Rookie-Manual/rookie-manual-chapter-25.mp3",
+    "duration": 506,
+    "manual": "Rookie"
+  }
+]

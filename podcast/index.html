@@ -88,68 +88,52 @@
     
     <section>
         <h2>Driver's Manual (10 Chapters)</h2>
-        <div class="chapter-grid" id="driver-chapters">
-            <!-- Populated by JavaScript -->
-        </div>
+        <div class="chapter-grid" id="driver-chapters"></div>
     </section>
     
     <section>
         <h2>Rookie Manual (25 Chapters)</h2>
-        <div class="chapter-grid" id="rookie-chapters">
-            <!-- Populated by JavaScript -->
-        </div>
+        <div class="chapter-grid" id="rookie-chapters"></div>
     </section>
     
     <section>
         <h2>Subscribe via RSS</h2>
         <p>Add this podcast to your favorite app:</p>
-        <a href="/feed.xml" class="rss-link">Subscribe to RSS Feed</a>
+        <a href="podcast.xml" class="rss-link">Subscribe to RSS Feed</a>
     </section>
     
     <footer>
-        <p>Generated with <a href="https://github.com/USERNAME/maryland-mva-podcast">Maryland MVA Podcast</a></p>
+        <p>Maryland MVA Study Podcast</p>
     </footer>
 
     <script>
-        const chapters = {
-            driver: [
-                { id: 1, title: "Driving Tests Requirements", duration: "12 min" },
-                { id: 2, title: "The Maryland GDL System", duration: "14 min" },
-                { id: 3, title: "Basic Driving", duration: "13 min" },
-                { id: 4, title: "Speed and Right-of-Way", duration: "15 min" },
-                { id: 5, title: "Traffic Signs and Signals", duration: "12 min" },
-                { id: 6, title: "Parking", duration: "10 min" },
-                { id: 7, title: "Sharing the Road", duration: "14 min" },
-                { id: 8, title: "Crashes and Traffic Stops", duration: "11 min" },
-                { id: 9, title: "Other Restrictions", duration: "13 min" },
-                { id: 10, title: "Insurance and Safety", duration: "15 min" }
-            ],
-            rookie: Array.from({length: 25}, (_, i) => ({
-                id: i + 1,
-                title: `Chapter ${i + 1}`,
-                duration: "12 min"
-            }))
-        };
-
-        function renderChapters(containerId, chapterList, prefix) {
+        fetch('episodes.json')
+            .then(r => r.json())
+            .then(episodes => {
+                const driverChapters = episodes.filter(e => e.manual === 'Driver');
+                const rookieChapters = episodes.filter(e => e.manual === 'Rookie');
+                
+                renderChapters('driver-chapters', driverChapters);
+                renderChapters('rookie-chapters', rookieChapters);
+            });
+        
+        function renderChapters(containerId, chapters) {
             const container = document.getElementById(containerId);
-            chapterList.forEach(ch => {
+            chapters.forEach(ch => {
                 const card = document.createElement('div');
                 card.className = 'chapter-card';
+                const duration = Math.floor(ch.duration / 60);
                 card.innerHTML = `
-                    <h3>Chapter ${ch.id}: ${ch.title}</h3>
-                    <p class="meta">${ch.duration}</p>
+                    <h3>${ch.title}</h3>
+                    <p class="meta">${duration} min</p>
                     <audio controls preload="none">
-                        <source src="/audio/${prefix}-chapter-${String(ch.id).padStart(2, '0')}.mp3" type="audio/mpeg">
+                        <source src="${ch.file}" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
                 `;
                 container.appendChild(card);
             });
         }
-
-        renderChapters('driver-chapters', chapters.driver, 'driver-manual');
-        renderChapters('rookie-chapters', chapters.rookie, 'rookie-manual');
     </script>
 </body>
 </html>
