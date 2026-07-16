@@ -12,7 +12,5 @@ dependencies = [
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
-[tool.uv]
-dev-dependencies = [
-    "pytest>=7.0",
-]
+[tool.hatch.build.targets.wheel]
+packages = ["scripts"]

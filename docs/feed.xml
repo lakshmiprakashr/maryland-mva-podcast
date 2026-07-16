@@ -7,9 +7,9 @@
     <title>Maryland MVA Study Podcast</title>
     <link>https://your-site.netlify.app</link>
     <language>en-us</language>
-    <description>Audio review materials for the Maryland Driver's License Exam. Study for the MVA knowledge test with chapter-by-chapter audio guides covering traffic laws, safe driving practices, and road signs.</description>
+    <description>Audio review materials for the Maryland Driver's License Exam. Study for the MVA knowledge test with chapter-by-chapter audio guides.</description>
     <itunes:author>MVA Study Guide</itunes:author>
-    <itunes:summary>Prepare for your Maryland driver's license exam with these audio study guides. Covers both the Driver's Manual and Rookie Manual with detailed explanations, memory tricks, and practice questions.</itunes:summary>
+    <itunes:summary>Prepare for your Maryland driver's license exam with these audio study guides.</itunes:summary>
     <itunes:owner>
       <itunes:name>MVA Study Guide</itunes:name>
     </itunes:owner>
@@ -19,22 +19,321 @@
     </itunes:category>
     <atom:link href="https://your-site.netlify.app/feed.xml" rel="self" type="application/rss+xml"/>
     
-    <!-- Driver's Manual Episodes -->
     <item>
       <title>Chapter 1: Driving Tests Requirements</title>
-      <description><![CDATA[
-        <p>Learn about the three licensing requirements for Maryland: vision screening, knowledge test, and driving skills test.</p>
-        <p><strong>Key topics:</strong> Vision standards, knowledge test format, vehicle requirements, document requirements.</p>
-      ]]></description>
-      <enclosure url="https://your-site.netlify.app/audio/driver-manual-chapter-01.mp3" type="audio/mpeg"/>
-      <itunes:title>Driving Tests Requirements</itunes:title>
+      <description>Learn about driving tests requirements for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/driver-manual-chapter-01.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Chapter 1: Driving Tests Requirements</itunes:title>
       <itunes:duration>720</itunes:duration>
-      <itunes:summary>Covers the three tests required for a Maryland driver's license: vision screening, knowledge test, and driving skills test.</itunes:summary>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>driver-manual-chapter-01</guid>
     </item>
-    
-    <!-- Add more episodes here -->
+    <item>
+      <title>Chapter 2: The Maryland GDL System</title>
+      <description>Learn about the maryland gdl system for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/driver-manual-chapter-02.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Chapter 2: The Maryland GDL System</itunes:title>
+      <itunes:duration>840</itunes:duration>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>driver-manual-chapter-02</guid>
+    </item>
+    <item>
+      <title>Chapter 3: Basic Driving</title>
+      <description>Learn about basic driving for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/driver-manual-chapter-03.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Chapter 3: Basic Driving</itunes:title>
+      <itunes:duration>780</itunes:duration>
+      <pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>driver-manual-chapter-03</guid>
+    </item>
+    <item>
+      <title>Chapter 4: Speed and Right-of-Way</title>
+      <description>Learn about speed and right-of-way for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/driver-manual-chapter-04.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Chapter 4: Speed and Right-of-Way</itunes:title>
+      <itunes:duration>900</itunes:duration>
+      <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>driver-manual-chapter-04</guid>
+    </item>
+    <item>
+      <title>Chapter 5: Traffic Signs and Signals</title>
+      <description>Learn about traffic signs and signals for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/driver-manual-chapter-05.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Chapter 5: Traffic Signs and Signals</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>driver-manual-chapter-05</guid>
+    </item>
+    <item>
+      <title>Chapter 6: Parking</title>
+      <description>Learn about parking for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/driver-manual-chapter-06.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Chapter 6: Parking</itunes:title>
+      <itunes:duration>600</itunes:duration>
+      <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>driver-manual-chapter-06</guid>
+    </item>
+    <item>
+      <title>Chapter 7: Sharing the Road</title>
+      <description>Learn about sharing the road for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/driver-manual-chapter-07.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Chapter 7: Sharing the Road</itunes:title>
+      <itunes:duration>840</itunes:duration>
+      <pubDate>Sun, 07 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>driver-manual-chapter-07</guid>
+    </item>
+    <item>
+      <title>Chapter 8: Crashes and Traffic Stops</title>
+      <description>Learn about crashes and traffic stops for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/driver-manual-chapter-08.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Chapter 8: Crashes and Traffic Stops</itunes:title>
+      <itunes:duration>660</itunes:duration>
+      <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>driver-manual-chapter-08</guid>
+    </item>
+    <item>
+      <title>Chapter 9: Other Restrictions</title>
+      <description>Learn about other restrictions for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/driver-manual-chapter-09.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Chapter 9: Other Restrictions</itunes:title>
+      <itunes:duration>780</itunes:duration>
+      <pubDate>Tue, 09 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>driver-manual-chapter-09</guid>
+    </item>
+    <item>
+      <title>Chapter 10: Insurance and Safety</title>
+      <description>Learn about insurance and safety for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/driver-manual-chapter-10.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Chapter 10: Insurance and Safety</itunes:title>
+      <itunes:duration>900</itunes:duration>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>driver-manual-chapter-10</guid>
+    </item>
+    <item>
+      <title>Rookie Chapter 1: Chapter 1</title>
+      <description>Learn about chapter 1 for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/rookie-manual-chapter-01.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Rookie Chapter 1: Chapter 1</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>rookie-manual-chapter-01</guid>
+    </item>
+    <item>
+      <title>Rookie Chapter 2: Chapter 2</title>
+      <description>Learn about chapter 2 for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/rookie-manual-chapter-02.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Rookie Chapter 2: Chapter 2</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <pubDate>Fri, 12 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>rookie-manual-chapter-02</guid>
+    </item>
+    <item>
+      <title>Rookie Chapter 3: Chapter 3</title>
+      <description>Learn about chapter 3 for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/rookie-manual-chapter-03.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Rookie Chapter 3: Chapter 3</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>rookie-manual-chapter-03</guid>
+    </item>
+    <item>
+      <title>Rookie Chapter 4: Chapter 4</title>
+      <description>Learn about chapter 4 for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/rookie-manual-chapter-04.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Rookie Chapter 4: Chapter 4</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>rookie-manual-chapter-04</guid>
+    </item>
+    <item>
+      <title>Rookie Chapter 5: Chapter 5</title>
+      <description>Learn about chapter 5 for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/rookie-manual-chapter-05.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Rookie Chapter 5: Chapter 5</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>rookie-manual-chapter-05</guid>
+    </item>
+    <item>
+      <title>Rookie Chapter 6: Chapter 6</title>
+      <description>Learn about chapter 6 for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/rookie-manual-chapter-06.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Rookie Chapter 6: Chapter 6</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>rookie-manual-chapter-06</guid>
+    </item>
+    <item>
+      <title>Rookie Chapter 7: Chapter 7</title>
+      <description>Learn about chapter 7 for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/rookie-manual-chapter-07.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Rookie Chapter 7: Chapter 7</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>rookie-manual-chapter-07</guid>
+    </item>
+    <item>
+      <title>Rookie Chapter 8: Chapter 8</title>
+      <description>Learn about chapter 8 for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/rookie-manual-chapter-08.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Rookie Chapter 8: Chapter 8</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>rookie-manual-chapter-08</guid>
+    </item>
+    <item>
+      <title>Rookie Chapter 9: Chapter 9</title>
+      <description>Learn about chapter 9 for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/rookie-manual-chapter-09.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Rookie Chapter 9: Chapter 9</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <pubDate>Fri, 19 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>rookie-manual-chapter-09</guid>
+    </item>
+    <item>
+      <title>Rookie Chapter 10: Chapter 10</title>
+      <description>Learn about chapter 10 for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/rookie-manual-chapter-10.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Rookie Chapter 10: Chapter 10</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>rookie-manual-chapter-10</guid>
+    </item>
+    <item>
+      <title>Rookie Chapter 11: Chapter 11</title>
+      <description>Learn about chapter 11 for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/rookie-manual-chapter-11.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Rookie Chapter 11: Chapter 11</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <pubDate>Sun, 21 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>rookie-manual-chapter-11</guid>
+    </item>
+    <item>
+      <title>Rookie Chapter 12: Chapter 12</title>
+      <description>Learn about chapter 12 for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/rookie-manual-chapter-12.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Rookie Chapter 12: Chapter 12</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>rookie-manual-chapter-12</guid>
+    </item>
+    <item>
+      <title>Rookie Chapter 13: Chapter 13</title>
+      <description>Learn about chapter 13 for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/rookie-manual-chapter-13.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Rookie Chapter 13: Chapter 13</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>rookie-manual-chapter-13</guid>
+    </item>
+    <item>
+      <title>Rookie Chapter 14: Chapter 14</title>
+      <description>Learn about chapter 14 for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/rookie-manual-chapter-14.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Rookie Chapter 14: Chapter 14</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <pubDate>Wed, 24 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>rookie-manual-chapter-14</guid>
+    </item>
+    <item>
+      <title>Rookie Chapter 15: Chapter 15</title>
+      <description>Learn about chapter 15 for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/rookie-manual-chapter-15.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Rookie Chapter 15: Chapter 15</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>rookie-manual-chapter-15</guid>
+    </item>
+    <item>
+      <title>Rookie Chapter 16: Chapter 16</title>
+      <description>Learn about chapter 16 for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/rookie-manual-chapter-16.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Rookie Chapter 16: Chapter 16</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>rookie-manual-chapter-16</guid>
+    </item>
+    <item>
+      <title>Rookie Chapter 17: Chapter 17</title>
+      <description>Learn about chapter 17 for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/rookie-manual-chapter-17.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Rookie Chapter 17: Chapter 17</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <pubDate>Sat, 27 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>rookie-manual-chapter-17</guid>
+    </item>
+    <item>
+      <title>Rookie Chapter 18: Chapter 18</title>
+      <description>Learn about chapter 18 for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/rookie-manual-chapter-18.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Rookie Chapter 18: Chapter 18</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>rookie-manual-chapter-18</guid>
+    </item>
+    <item>
+      <title>Rookie Chapter 19: Chapter 19</title>
+      <description>Learn about chapter 19 for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/rookie-manual-chapter-19.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Rookie Chapter 19: Chapter 19</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <pubDate>Mon, 29 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>rookie-manual-chapter-19</guid>
+    </item>
+    <item>
+      <title>Rookie Chapter 20: Chapter 20</title>
+      <description>Learn about chapter 20 for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/rookie-manual-chapter-20.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Rookie Chapter 20: Chapter 20</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <pubDate>Tue, 30 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>rookie-manual-chapter-20</guid>
+    </item>
+    <item>
+      <title>Rookie Chapter 21: Chapter 21</title>
+      <description>Learn about chapter 21 for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/rookie-manual-chapter-21.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Rookie Chapter 21: Chapter 21</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <pubDate>Wed, 31 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>rookie-manual-chapter-21</guid>
+    </item>
+    <item>
+      <title>Rookie Chapter 22: Chapter 22</title>
+      <description>Learn about chapter 22 for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/rookie-manual-chapter-22.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Rookie Chapter 22: Chapter 22</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>rookie-manual-chapter-22</guid>
+    </item>
+    <item>
+      <title>Rookie Chapter 23: Chapter 23</title>
+      <description>Learn about chapter 23 for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/rookie-manual-chapter-23.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Rookie Chapter 23: Chapter 23</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <pubDate>Fri, 02 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>rookie-manual-chapter-23</guid>
+    </item>
+    <item>
+      <title>Rookie Chapter 24: Chapter 24</title>
+      <description>Learn about chapter 24 for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/rookie-manual-chapter-24.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Rookie Chapter 24: Chapter 24</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <pubDate>Sat, 03 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>rookie-manual-chapter-24</guid>
+    </item>
+    <item>
+      <title>Rookie Chapter 25: Chapter 25</title>
+      <description>Learn about chapter 25 for the Maryland MVA exam.</description>
+      <enclosure url="https://your-site.netlify.app/audio/rookie-manual-chapter-25.mp3" type="audio/mpeg" length="0"/>
+      <itunes:title>Rookie Chapter 25: Chapter 25</itunes:title>
+      <itunes:duration>720</itunes:duration>
+      <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>rookie-manual-chapter-25</guid>
+    </item>
     
   </channel>
 </rss>
