@@ -153,7 +153,42 @@ Node.js 20 is deprecated. The following actions target Node.js 20 but are being 
 
 ---
 
-## 5. Artwork Redesign
+## 5. RSS Feed URL Fix
+
+### Problem
+
+RSS feed on GitHub Pages was pointing to Netlify for artwork:
+
+```xml
+<itunes:image href="https://mva-2tqlc3sd.netlify.app/artwork.jpg"/>
+```
+
+### Root Cause
+
+RSS feed was generated with Netlify base URL during initial setup. When deploying to GitHub Pages, the URLs weren't updated.
+
+### Solution
+
+Regenerated RSS feed with GitHub Pages base URL:
+
+```bash
+uv run python scripts/podcast_generator.py \
+  --base-url "https://lakshmiprakashr.github.io/maryland-mva-podcast"
+```
+
+### Result
+
+RSS feed now correctly points to GitHub Pages:
+
+```xml
+<itunes:image href="https://lakshmiprakashr.github.io/maryland-mva-podcast/artwork.jpg"/>
+```
+
+**Commit:** `f1d9f93`
+
+---
+
+## 6. Artwork Redesign
 
 ### Problem
 
