@@ -74,8 +74,8 @@ async def process_chapter_edge_tts(manual_type, chapter_id, config):
     with open(input_path) as f:
         text = f.read()
     
-    # Generate MP3
-    output_dir = Path(__file__).parent.parent / "output" / "mp3"
+    # Generate MP3 to podcast directory
+    output_dir = Path(__file__).parent.parent / "podcast" / manual_type
     output_dir.mkdir(parents=True, exist_ok=True)
     
     output_path = output_dir / f"{manual_type.lower()}-chapter-{chapter_id}.mp3"
@@ -112,8 +112,8 @@ def process_chapter_piper(manual_type, chapter_id, config):
     print(f"  Generating: {wav_path.name} with piper...")
     generate_with_piper(input_path, wav_path, model, sentence_silence)
     
-    # Convert to MP3
-    mp3_dir = Path(__file__).parent.parent / "output" / "mp3"
+    # Convert to MP3 to podcast directory
+    mp3_dir = Path(__file__).parent.parent / "podcast" / manual_type
     mp3_dir.mkdir(parents=True, exist_ok=True)
     
     mp3_path = mp3_dir / f"{manual_type.lower()}-chapter-{chapter_id}.mp3"
@@ -160,14 +160,21 @@ async def main():
     print("GENERATION COMPLETE")
     print("=" * 60)
     
-    # List generated files
-    mp3_dir = Path(__file__).parent.parent / "output" / "mp3"
-    if mp3_dir.exists():
-        mp3_files = list(mp3_dir.glob("*.mp3"))
-        print(f"\nGenerated {len(mp3_files)} MP3 files:")
-        for f in sorted(mp3_files):
-            size_mb = f.stat().st_size / (1024 * 1024)
-            print(f"  {f.name} ({size_mb:.1f} MB)")
+    # List generated files from podcast directory
+    podcast_dir = Path(__file__).parent.parent / "podcast"
+    driver_dir = podcast_dir / "Driver-Manual"
+    rookie_dir = podcast_dir / "Rookie-Manual"
+    
+    mp3_files = []
+    if driver_dir.exists():
+        mp3_files.extend(list(driver_dir.glob("*.mp3")))
+    if rookie_dir.exists():
+        mp3_files.extend(list(rookie_dir.glob("*.mp3")))
+    
+    print(f"\nGenerated {len(mp3_files)} MP3 files:")
+    for f in sorted(mp3_files):
+        size_mb = f.stat().st_size / (1024 * 1024)
+        print(f"  {f.name} ({size_mb:.1f} MB)")
 
 
 if __name__ == "__main__":

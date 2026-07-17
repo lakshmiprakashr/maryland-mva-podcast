@@ -28,10 +28,16 @@ def extract_text_from_audio_script(md_content, config):
     # Remove timestamps like [0:00], [1:30]
     text = re.sub(r'\[[\d:]+\]', '', text)
     
-    # Convert pause markers to SSML break tags
+    # Remove SSML break tags (edge-tts doesn't support them properly)
+    text = re.sub(r'<break\s+time="[^"]*"\s*/>', '', text)
+    
+    # Remove pause markers entirely (don't replace with periods)
     pause_markers = config.get('pause_markers', {})
-    for marker, duration in pause_markers.items():
-        text = text.replace(marker, f'<break time="{duration}ms"/>')
+    for marker in pause_markers.keys():
+        text = text.replace(marker, '')
+    
+    # Remove [EMPHASIS: ...] markers
+    text = re.sub(r'\[EMPHASIS:.*?\]', '', text)
     
     # Expand abbreviations
     for abbr, expansion in abbreviations.items():
@@ -46,6 +52,10 @@ def extract_text_from_audio_script(md_content, config):
     
     # Remove special characters but keep punctuation
     text = re.sub(r'[#&@<>{}]', '', text)
+    
+    # Clean up multiple periods or spaces
+    text = re.sub(r'\.{2,}', '.', text)  # Multiple periods to single
+    text = re.sub(r' +', ' ', text)      # Multiple spaces to single
     
     # Clean up whitespace
     text = re.sub(r'\n{3,}', '\n\n', text)
