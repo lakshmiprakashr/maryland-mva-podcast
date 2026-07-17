@@ -2,18 +2,18 @@
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
     <title>Maryland MVA Study Podcast</title>
-    <link>https://mva-2tqlc3sd.netlify.app</link>
+    <link>https://lakshmiprakashr.github.io/maryland-mva-podcast</link>
     <description>Audio review materials for the Maryland Driver's License Exam. Study for the MVA knowledge test with chapter-by-chapter audio guides covering traffic laws, safe driving practices, and road signs.</description>
-    <atom:link href="https://mva-2tqlc3sd.netlify.app/podcast.xml" rel="self"/>
+    <atom:link href="https://lakshmiprakashr.github.io/maryland-mva-podcast/podcast.xml" rel="self"/>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 17 Jul 2026 00:58:35 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2026 01:19:54 +0000</lastBuildDate>
     <managingEditor>MVA Study Guide</managingEditor>
     <webMaster>MVA Study Guide</webMaster>
     <itunes:author>MVA Study Guide</itunes:author>
     <itunes:category text="Education"/>
-    <itunes:image href="https://mva-2tqlc3sd.netlify.app/artwork.jpg"/>
+    <itunes:image href="https://lakshmiprakashr.github.io/maryland-mva-podcast/artwork.jpg"/>
     <itunes:explicit>no</itunes:explicit>
     <itunes:owner>
       <itunes:name>MVA Study Guide</itunes:name>
@@ -23,8 +23,8 @@
     <item>
       <title>Rookie Ch.25: Chapter 25</title>
       <description>Rookie Manual Chapter 25 - Maryland MVA study material.</description>
-      <guid isPermaLink="false">c079bc26-a1e8-4b29-ba7c-dc512684c98a</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Rookie-Manual/rookie-manual-chapter-25.mp3" length="3040560" type="audio/mpeg"/>
+      <guid isPermaLink="false">2de320fc-9533-4024-9092-7e21db1b88ad</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Rookie-Manual/rookie-manual-chapter-25.mp3" length="3040560" type="audio/mpeg"/>
       <pubDate>Sun, 25 Feb 2024 00:00:00 +0000</pubDate>
       <itunes:duration>506</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -33,8 +33,8 @@
     <item>
       <title>Rookie Ch.24: Chapter 24</title>
       <description>Rookie Manual Chapter 24 - Maryland MVA study material.</description>
-      <guid isPermaLink="false">b27d4833-86ea-4276-b753-67b7c5a6cf77</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Rookie-Manual/rookie-manual-chapter-24.mp3" length="3266208" type="audio/mpeg"/>
+      <guid isPermaLink="false">1430ab4e-2e50-46b2-8b00-6ff85de22c01</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Rookie-Manual/rookie-manual-chapter-24.mp3" length="3266208" type="audio/mpeg"/>
       <pubDate>Sat, 24 Feb 2024 00:00:00 +0000</pubDate>
       <itunes:duration>544</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -43,8 +43,8 @@
     <item>
       <title>Rookie Ch.23: Chapter 23</title>
       <description>Rookie Manual Chapter 23 - Maryland MVA study material.</description>
-      <guid isPermaLink="false">918a2f35-0d7a-461a-9c6a-6c2c62c5be9c</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Rookie-Manual/rookie-manual-chapter-23.mp3" length="2969856" type="audio/mpeg"/>
+      <guid isPermaLink="false">24a86db6-26a6-42d8-b407-4518da71e5f9</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Rookie-Manual/rookie-manual-chapter-23.mp3" length="2969856" type="audio/mpeg"/>
       <pubDate>Fri, 23 Feb 2024 00:00:00 +0000</pubDate>
       <itunes:duration>494</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -53,8 +53,8 @@
     <item>
       <title>Rookie Ch.22: Chapter 22</title>
       <description>Rookie Manual Chapter 22 - Maryland MVA study material.</description>
-      <guid isPermaLink="false">b564ae33-7f85-4daf-987a-e75e9c2e1941</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Rookie-Manual/rookie-manual-chapter-22.mp3" length="2898288" type="audio/mpeg"/>
+      <guid isPermaLink="false">596e16a2-5075-4d6d-a7da-3b1cf3d6c3d6</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Rookie-Manual/rookie-manual-chapter-22.mp3" length="2898288" type="audio/mpeg"/>
       <pubDate>Thu, 22 Feb 2024 00:00:00 +0000</pubDate>
       <itunes:duration>483</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -63,8 +63,8 @@
     <item>
       <title>Rookie Ch.21: Chapter 21</title>
       <description>Rookie Manual Chapter 21 - Maryland MVA study material.</description>
-      <guid isPermaLink="false">83b87ac5-6df8-4967-bfe5-200b6c4ae002</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Rookie-Manual/rookie-manual-chapter-21.mp3" length="2873952" type="audio/mpeg"/>
+      <guid isPermaLink="false">a696ecb9-9a39-467f-a36b-bec7c542b285</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Rookie-Manual/rookie-manual-chapter-21.mp3" length="2873952" type="audio/mpeg"/>
       <pubDate>Wed, 21 Feb 2024 00:00:00 +0000</pubDate>
       <itunes:duration>478</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -73,8 +73,8 @@
     <item>
       <title>Rookie Ch.20: Chapter 20</title>
       <description>Rookie Manual Chapter 20 - Maryland MVA study material.</description>
-      <guid isPermaLink="false">f782fe8a-949a-44dd-882c-ea24b0ff0bde</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Rookie-Manual/rookie-manual-chapter-20.mp3" length="226800" type="audio/mpeg"/>
+      <guid isPermaLink="false">f60f170d-2ade-4955-ba08-03f05f237c0f</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Rookie-Manual/rookie-manual-chapter-20.mp3" length="226800" type="audio/mpeg"/>
       <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
       <itunes:duration>37</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -83,8 +83,8 @@
     <item>
       <title>Rookie Ch.19: Chapter 19</title>
       <description>Rookie Manual Chapter 19 - Maryland MVA study material.</description>
-      <guid isPermaLink="false">5bc07d44-3b13-4341-befe-b5ba17cc2ff7</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Rookie-Manual/rookie-manual-chapter-19.mp3" length="2723904" type="audio/mpeg"/>
+      <guid isPermaLink="false">f500db3d-44ea-418e-b418-9f20e8f26403</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Rookie-Manual/rookie-manual-chapter-19.mp3" length="2723904" type="audio/mpeg"/>
       <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
       <itunes:duration>453</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -93,8 +93,8 @@
     <item>
       <title>Rookie Ch.18: Chapter 18</title>
       <description>Rookie Manual Chapter 18 - Maryland MVA study material.</description>
-      <guid isPermaLink="false">be34b915-ff2d-4403-9d0b-916149cf4d2d</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Rookie-Manual/rookie-manual-chapter-18.mp3" length="2490048" type="audio/mpeg"/>
+      <guid isPermaLink="false">dc42d468-49be-4f09-be10-1dc68b275d8f</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Rookie-Manual/rookie-manual-chapter-18.mp3" length="2490048" type="audio/mpeg"/>
       <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
       <itunes:duration>415</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -103,8 +103,8 @@
     <item>
       <title>Rookie Ch.17: Chapter 17</title>
       <description>Rookie Manual Chapter 17 - Maryland MVA study material.</description>
-      <guid isPermaLink="false">74692b03-0187-49aa-b13d-5b3928cffd12</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Rookie-Manual/rookie-manual-chapter-17.mp3" length="2781072" type="audio/mpeg"/>
+      <guid isPermaLink="false">dea378a3-8088-4c8e-b24a-1fecb0515e57</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Rookie-Manual/rookie-manual-chapter-17.mp3" length="2781072" type="audio/mpeg"/>
       <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
       <itunes:duration>463</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -113,8 +113,8 @@
     <item>
       <title>Rookie Ch.16: Chapter 16</title>
       <description>Rookie Manual Chapter 16 - Maryland MVA study material.</description>
-      <guid isPermaLink="false">55edb612-a7eb-443b-886b-61c4bc37b8fb</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Rookie-Manual/rookie-manual-chapter-16.mp3" length="2883168" type="audio/mpeg"/>
+      <guid isPermaLink="false">0c0038ae-7425-4489-abcd-a4c28466e990</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Rookie-Manual/rookie-manual-chapter-16.mp3" length="2883168" type="audio/mpeg"/>
       <pubDate>Fri, 16 Feb 2024 00:00:00 +0000</pubDate>
       <itunes:duration>480</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -123,8 +123,8 @@
     <item>
       <title>Rookie Ch.15: Chapter 15</title>
       <description>Rookie Manual Chapter 15 - Maryland MVA study material.</description>
-      <guid isPermaLink="false">35f09d5a-9304-4409-86a4-2c4b45f2e376</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Rookie-Manual/rookie-manual-chapter-15.mp3" length="2715984" type="audio/mpeg"/>
+      <guid isPermaLink="false">e03c7b60-91a1-4f0f-a15d-67d41a7601ff</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Rookie-Manual/rookie-manual-chapter-15.mp3" length="2715984" type="audio/mpeg"/>
       <pubDate>Thu, 15 Feb 2024 00:00:00 +0000</pubDate>
       <itunes:duration>452</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -133,8 +133,8 @@
     <item>
       <title>Rookie Ch.14: Chapter 14</title>
       <description>Rookie Manual Chapter 14 - Maryland MVA study material.</description>
-      <guid isPermaLink="false">ef545ef7-732c-49f5-af9d-fda480fa7dc3</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Rookie-Manual/rookie-manual-chapter-14.mp3" length="3167712" type="audio/mpeg"/>
+      <guid isPermaLink="false">a8e6f478-d3f5-4ebb-8ad3-871a7308a670</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Rookie-Manual/rookie-manual-chapter-14.mp3" length="3167712" type="audio/mpeg"/>
       <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
       <itunes:duration>527</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -143,8 +143,8 @@
     <item>
       <title>Rookie Ch.13: Chapter 13</title>
       <description>Rookie Manual Chapter 13 - Maryland MVA study material.</description>
-      <guid isPermaLink="false">066466b0-e45e-4434-95bc-651df56328a6</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Rookie-Manual/rookie-manual-chapter-13.mp3" length="2907072" type="audio/mpeg"/>
+      <guid isPermaLink="false">6d84b605-edc2-48c7-a129-f7ce04784845</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Rookie-Manual/rookie-manual-chapter-13.mp3" length="2907072" type="audio/mpeg"/>
       <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
       <itunes:duration>484</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -153,8 +153,8 @@
     <item>
       <title>Rookie Ch.12: Chapter 12</title>
       <description>Rookie Manual Chapter 12 - Maryland MVA study material.</description>
-      <guid isPermaLink="false">362653e8-acb6-403d-80f6-be5efe479c23</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Rookie-Manual/rookie-manual-chapter-12.mp3" length="2835936" type="audio/mpeg"/>
+      <guid isPermaLink="false">fe29f3e3-95a5-4910-989e-4effeeb2cfcf</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Rookie-Manual/rookie-manual-chapter-12.mp3" length="2835936" type="audio/mpeg"/>
       <pubDate>Mon, 12 Feb 2024 00:00:00 +0000</pubDate>
       <itunes:duration>472</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -163,8 +163,8 @@
     <item>
       <title>Rookie Ch.11: Chapter 11</title>
       <description>Rookie Manual Chapter 11 - Maryland MVA study material.</description>
-      <guid isPermaLink="false">0a4c7d07-b389-487c-8ca1-5eb34e236bd4</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Rookie-Manual/rookie-manual-chapter-11.mp3" length="3064176" type="audio/mpeg"/>
+      <guid isPermaLink="false">ed32e533-5656-4246-8591-6507f174f7f9</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Rookie-Manual/rookie-manual-chapter-11.mp3" length="3064176" type="audio/mpeg"/>
       <pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate>
       <itunes:duration>510</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -173,8 +173,8 @@
     <item>
       <title>Rookie Ch.10: Chapter 10</title>
       <description>Rookie Manual Chapter 10 - Maryland MVA study material.</description>
-      <guid isPermaLink="false">a876a7e2-1935-47a0-a4e7-e3cea805bf0d</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Rookie-Manual/rookie-manual-chapter-10.mp3" length="3992256" type="audio/mpeg"/>
+      <guid isPermaLink="false">2942cfb9-1396-46aa-80b3-5c645bacdd81</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Rookie-Manual/rookie-manual-chapter-10.mp3" length="3992256" type="audio/mpeg"/>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
       <itunes:duration>665</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -183,8 +183,8 @@
     <item>
       <title>Rookie Ch.9: Chapter 9</title>
       <description>Rookie Manual Chapter 9 - Maryland MVA study material.</description>
-      <guid isPermaLink="false">3e48904f-5fd0-4fe9-97b7-73c36059c20d</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Rookie-Manual/rookie-manual-chapter-09.mp3" length="3493296" type="audio/mpeg"/>
+      <guid isPermaLink="false">72ff22ad-1b8d-4e12-a3c0-2c272b22a806</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Rookie-Manual/rookie-manual-chapter-09.mp3" length="3493296" type="audio/mpeg"/>
       <pubDate>Fri, 09 Feb 2024 00:00:00 +0000</pubDate>
       <itunes:duration>582</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -193,8 +193,8 @@
     <item>
       <title>Rookie Ch.8: Chapter 8</title>
       <description>Rookie Manual Chapter 8 - Maryland MVA study material.</description>
-      <guid isPermaLink="false">6524fca6-be0f-4ddc-86b3-de145cd2b7bc</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Rookie-Manual/rookie-manual-chapter-08.mp3" length="3188592" type="audio/mpeg"/>
+      <guid isPermaLink="false">21f10451-c1b8-4e47-9c61-31afc2660c91</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Rookie-Manual/rookie-manual-chapter-08.mp3" length="3188592" type="audio/mpeg"/>
       <pubDate>Thu, 08 Feb 2024 00:00:00 +0000</pubDate>
       <itunes:duration>531</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -203,8 +203,8 @@
     <item>
       <title>Rookie Ch.7: Chapter 7</title>
       <description>Rookie Manual Chapter 7 - Maryland MVA study material.</description>
-      <guid isPermaLink="false">6def1479-8765-45c1-b405-8c18d005a025</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Rookie-Manual/rookie-manual-chapter-07.mp3" length="3293136" type="audio/mpeg"/>
+      <guid isPermaLink="false">9342fc15-cec1-4d0a-9bcb-946a3f8f60d9</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Rookie-Manual/rookie-manual-chapter-07.mp3" length="3293136" type="audio/mpeg"/>
       <pubDate>Wed, 07 Feb 2024 00:00:00 +0000</pubDate>
       <itunes:duration>548</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -213,8 +213,8 @@
     <item>
       <title>Rookie Ch.6: Chapter 6</title>
       <description>Rookie Manual Chapter 6 - Maryland MVA study material.</description>
-      <guid isPermaLink="false">020995a0-95e8-4e5f-8c0b-a88126bc5590</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Rookie-Manual/rookie-manual-chapter-06.mp3" length="385200" type="audio/mpeg"/>
+      <guid isPermaLink="false">6dadde6e-134d-4f0d-821f-6783c6ed6d10</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Rookie-Manual/rookie-manual-chapter-06.mp3" length="385200" type="audio/mpeg"/>
       <pubDate>Tue, 06 Feb 2024 00:00:00 +0000</pubDate>
       <itunes:duration>64</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -223,8 +223,8 @@
     <item>
       <title>Rookie Ch.5: Chapter 5</title>
       <description>Rookie Manual Chapter 5 - Maryland MVA study material.</description>
-      <guid isPermaLink="false">ab01c843-3d8f-463b-8e34-afda8bcb6017</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Rookie-Manual/rookie-manual-chapter-05.mp3" length="3439872" type="audio/mpeg"/>
+      <guid isPermaLink="false">f3ed4a9e-54c8-4118-a29d-1041a6c929c7</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Rookie-Manual/rookie-manual-chapter-05.mp3" length="3439872" type="audio/mpeg"/>
       <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
       <itunes:duration>573</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -233,8 +233,8 @@
     <item>
       <title>Rookie Ch.4: Chapter 4</title>
       <description>Rookie Manual Chapter 4 - Maryland MVA study material.</description>
-      <guid isPermaLink="false">48e8dc92-b952-4d3f-b6c1-161658e6bd13</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Rookie-Manual/rookie-manual-chapter-04.mp3" length="2873232" type="audio/mpeg"/>
+      <guid isPermaLink="false">821f0c03-0cbd-4542-a327-25a4aab9dada</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Rookie-Manual/rookie-manual-chapter-04.mp3" length="2873232" type="audio/mpeg"/>
       <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
       <itunes:duration>478</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -243,8 +243,8 @@
     <item>
       <title>Rookie Ch.3: Chapter 3</title>
       <description>Rookie Manual Chapter 3 - Maryland MVA study material.</description>
-      <guid isPermaLink="false">69215344-7612-444c-9006-0336f1adcef6</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Rookie-Manual/rookie-manual-chapter-03.mp3" length="2899728" type="audio/mpeg"/>
+      <guid isPermaLink="false">d1ca3928-c853-482e-bdc5-739efd204455</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Rookie-Manual/rookie-manual-chapter-03.mp3" length="2899728" type="audio/mpeg"/>
       <pubDate>Sat, 03 Feb 2024 00:00:00 +0000</pubDate>
       <itunes:duration>483</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -253,8 +253,8 @@
     <item>
       <title>Rookie Ch.2: Chapter 2</title>
       <description>Rookie Manual Chapter 2 - Maryland MVA study material.</description>
-      <guid isPermaLink="false">a9615f55-026f-4c4f-b371-60da795c1b52</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Rookie-Manual/rookie-manual-chapter-02.mp3" length="3014496" type="audio/mpeg"/>
+      <guid isPermaLink="false">dbd76b06-cdb1-4548-b460-3842f9b6bb84</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Rookie-Manual/rookie-manual-chapter-02.mp3" length="3014496" type="audio/mpeg"/>
       <pubDate>Fri, 02 Feb 2024 00:00:00 +0000</pubDate>
       <itunes:duration>502</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -263,8 +263,8 @@
     <item>
       <title>Rookie Ch.1: Chapter 1</title>
       <description>Rookie Manual Chapter 1 - Maryland MVA study material.</description>
-      <guid isPermaLink="false">afb96729-461f-4d53-b963-1246e52622a6</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Rookie-Manual/rookie-manual-chapter-01.mp3" length="2842272" type="audio/mpeg"/>
+      <guid isPermaLink="false">bd3b6895-0279-41df-b125-67a0b9ed7757</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Rookie-Manual/rookie-manual-chapter-01.mp3" length="2842272" type="audio/mpeg"/>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
       <itunes:duration>473</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -273,8 +273,8 @@
     <item>
       <title>Driver Ch.10: Insurance and Safety</title>
       <description>Insurance requirements and vehicle safety.</description>
-      <guid isPermaLink="false">5caf7c69-d4d2-4879-9dae-38b8d98ad67e</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Driver-Manual/driver-manual-chapter-10.mp3" length="6078816" type="audio/mpeg"/>
+      <guid isPermaLink="false">6e1d088c-e17a-4c87-8302-29a083ff5a88</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Driver-Manual/driver-manual-chapter-10.mp3" length="6078816" type="audio/mpeg"/>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <itunes:duration>1013</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -283,8 +283,8 @@
     <item>
       <title>Driver Ch.9: Other Restrictions</title>
       <description>License restrictions, violations, and penalties.</description>
-      <guid isPermaLink="false">6e76dc51-78c1-4c49-a7db-81900da23020</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Driver-Manual/driver-manual-chapter-09.mp3" length="5524416" type="audio/mpeg"/>
+      <guid isPermaLink="false">2c3d29c9-f0d9-474f-8e73-92469a41eab0</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Driver-Manual/driver-manual-chapter-09.mp3" length="5524416" type="audio/mpeg"/>
       <pubDate>Tue, 09 Jan 2024 00:00:00 +0000</pubDate>
       <itunes:duration>920</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -293,8 +293,8 @@
     <item>
       <title>Driver Ch.8: Crashes and Traffic Stops</title>
       <description>What to do in case of a crash and during traffic stops.</description>
-      <guid isPermaLink="false">2fb3b770-2619-4354-9f30-664c611f4194</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Driver-Manual/driver-manual-chapter-08.mp3" length="4156848" type="audio/mpeg"/>
+      <guid isPermaLink="false">a4945d65-58f1-441e-a76c-d10a2d23d144</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Driver-Manual/driver-manual-chapter-08.mp3" length="4156848" type="audio/mpeg"/>
       <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
       <itunes:duration>692</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -303,8 +303,8 @@
     <item>
       <title>Driver Ch.7: Sharing the Road</title>
       <description>Sharing the road with pedestrians, bicyclists, and other vehicles.</description>
-      <guid isPermaLink="false">fa93b4de-67fa-425e-b65a-182d06ba9d1d</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Driver-Manual/driver-manual-chapter-07.mp3" length="5193504" type="audio/mpeg"/>
+      <guid isPermaLink="false">5e38ca63-049c-4d13-af01-da749f740405</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Driver-Manual/driver-manual-chapter-07.mp3" length="5193504" type="audio/mpeg"/>
       <pubDate>Sun, 07 Jan 2024 00:00:00 +0000</pubDate>
       <itunes:duration>865</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -313,8 +313,8 @@
     <item>
       <title>Driver Ch.6: Parking</title>
       <description>Parking rules, parallel parking, and parking restrictions.</description>
-      <guid isPermaLink="false">2b77a81d-e467-41bb-966e-c5d745124840</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Driver-Manual/driver-manual-chapter-06.mp3" length="4407264" type="audio/mpeg"/>
+      <guid isPermaLink="false">f84aca29-cec4-455d-8d45-5d75df9a9ac9</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Driver-Manual/driver-manual-chapter-06.mp3" length="4407264" type="audio/mpeg"/>
       <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
       <itunes:duration>734</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -323,8 +323,8 @@
     <item>
       <title>Driver Ch.5: Traffic Signs and Signals</title>
       <description>Understanding traffic signs, signals, and road markings.</description>
-      <guid isPermaLink="false">6765a93f-c2cb-4c6a-9d0c-8f7792ae69cb</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Driver-Manual/driver-manual-chapter-05.mp3" length="5084064" type="audio/mpeg"/>
+      <guid isPermaLink="false">c81585d3-af8d-475d-8bac-1c15a67efc2f</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Driver-Manual/driver-manual-chapter-05.mp3" length="5084064" type="audio/mpeg"/>
       <pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
       <itunes:duration>847</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -333,8 +333,8 @@
     <item>
       <title>Driver Ch.4: Speed and Right-of-Way</title>
       <description>Speed limits, following distances, and right-of-way rules at intersections.</description>
-      <guid isPermaLink="false">d1e78ae6-209e-4e95-9052-0bae37e9ccd2</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Driver-Manual/driver-manual-chapter-04.mp3" length="4672512" type="audio/mpeg"/>
+      <guid isPermaLink="false">1cd3ece8-c51c-4eb2-9650-158c7a38553e</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Driver-Manual/driver-manual-chapter-04.mp3" length="4672512" type="audio/mpeg"/>
       <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
       <itunes:duration>778</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -343,8 +343,8 @@
     <item>
       <title>Driver Ch.3: Basic Driving</title>
       <description>Defensive driving, right-of-way rules, speed control, following distance, and lane driving.</description>
-      <guid isPermaLink="false">bf721f72-8e61-43e4-a8ad-27ecccff0533</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Driver-Manual/driver-manual-chapter-03.mp3" length="4222224" type="audio/mpeg"/>
+      <guid isPermaLink="false">ef154612-3a2a-41a4-bd56-30e8907f5f46</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Driver-Manual/driver-manual-chapter-03.mp3" length="4222224" type="audio/mpeg"/>
       <pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate>
       <itunes:duration>703</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -353,8 +353,8 @@
     <item>
       <title>Driver Ch.2: The Maryland GDL System</title>
       <description>Understand Maryland's Graduated Driver Licensing system for first-time drivers.</description>
-      <guid isPermaLink="false">2a9818d1-f3ef-47d2-a04b-d98585e2911e</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Driver-Manual/driver-manual-chapter-02.mp3" length="4362336" type="audio/mpeg"/>
+      <guid isPermaLink="false">903bdb54-e11a-4299-8fe1-646f83d480ac</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Driver-Manual/driver-manual-chapter-02.mp3" length="4362336" type="audio/mpeg"/>
       <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
       <itunes:duration>727</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -363,8 +363,8 @@
     <item>
       <title>Driver Ch.1: Driving Tests Requirements</title>
       <description>Learn about the three licensing requirements for Maryland: vision screening, knowledge test, and driving skills test.</description>
-      <guid isPermaLink="false">4135885c-8c9c-49a2-9568-bd7e9f67729a</guid>
-      <enclosure url="https://mva-2tqlc3sd.netlify.app/Driver-Manual/driver-manual-chapter-01.mp3" length="5490288" type="audio/mpeg"/>
+      <guid isPermaLink="false">d2dece6f-8aad-4dfa-a65b-b363f5f6d3fa</guid>
+      <enclosure url="https://lakshmiprakashr.github.io/maryland-mva-podcast/Driver-Manual/driver-manual-chapter-01.mp3" length="5490288" type="audio/mpeg"/>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <itunes:duration>915</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
